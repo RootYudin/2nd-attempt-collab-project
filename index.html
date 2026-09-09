@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SYS Clothing | Modern Fashion</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement">
+        Free shipping on orders over $75
+    </div>
+
+
+    <!-- Navigation -->
+    <header class="header">
+
+        <div class="nav-container">
+
+            <a href="#" class="logo">
+                SYS<span>.</span>
+            </a>
+
+            <nav class="nav-menu" id="nav_menu">
+
+                <a href="#home">Home</a>
+                <a href="#shop">Shop</a>
+                <a href="#collections">Collections</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <button class="icon-button" id="search_button">
+                    🔍
+                </button>
+
+                <button class="icon-button">
+                    ♡
+                </button>
+
+                <button class="cart-button" id="cart_button">
+                    🛒
+                    <span id="cart_count">0</span>
+                </button>
+
+                <button class="menu-button" id="menu_button">
+                    ☰
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- Search Box -->
+    <div class="search-container" id="search_container">
+
+        <input
+            type="text"
+            id="search_input"
+            placeholder="Search for clothes..."
+        >
+
+    </div>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="small-heading">
+                NEW SEASON 2026
+            </p>
+
+            <h1>
+                Wear Your<br>
+                <span>Identity.</span>
+            </h1>
+
+            <p class="hero-text">
+                Discover modern clothing designed for people
+                who want to express their own style.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#shop" class="primary-button">
+                    Shop Now
+                </a>
+
+                <a href="#collections" class="secondary-button">
+                    Explore Collection
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Categories -->
+    <section class="categories" id="collections">
+
+        <div class="section-heading">
+
+            <p>EXPLORE</p>
+
+            <h2>
+                Shop by Category
+            </h2>
+
+        </div>
+
+
+        <div class="category-grid">
+
+            <div class="category-card">
+                <img
+                    src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80"
+                    alt="T-Shirts"
+                >
+
+                <div class="category-content">
+                    <h3>T-Shirts</h3>
+                    <a href="#shop">Shop Now →</a>
+                </div>
+            </div>
+
+
+            <div class="category-card">
+                <img
+                    src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=800&q=80"
+                    alt="Jeans"
+                >
+
+                <div class="category-content">
+                    <h3>Denim</h3>
+                    <a href="#shop">Shop Now →</a>
+                </div>
+            </div>
+
+
+            <div class="category-card">
+                <img
+                    src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=800&q=80"
+                    alt="Jackets"
+                >
+
+                <div class="category-content">
+                    <h3>Jackets</h3>
+                    <a href="#shop">Shop Now →</a>
+                </div>
+            </div>
+
+
+            <div class="category-card">
+                <img
+                    src="https://images.unsplash.com/photo-1506629905607-d9e9d6d7a3f5?auto=format&fit=crop&w=800&q=80"
+                    alt="Hoodies"
+                >
+
+                <div class="category-content">
+                    <h3>Hoodies</h3>
+                    <a href="#shop">Shop Now →</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Products -->
+    <section class="products-section" id="shop">
+
+        <div class="section-heading">
+
+            <p>OUR COLLECTION</p>
+
+            <h2>
+                Best Sellers
+            </h2>
+
+        </div>
+
+
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+
+            <button class="filter-button active" data-category="all">
+                All
+            </button>
+
+            <button class="filter-button" data-category="tshirt">
+                T-Shirts
+            </button>
+
+            <button class="filter-button" data-category="hoodie">
+                Hoodies
+            </button>
+
+            <button class="filter-button" data-category="jacket">
+                Jackets
+            </button>
+
+            <button class="filter-button" data-category="denim">
+                Denim
+            </button>
+
+        </div>
+
+
+        <div class="product-grid" id="product_grid">
+
+            <!-- Product 1 -->
+            <div class="product-card" data-category="tshirt">
+
+                <div class="product-image">
+
+                    <span class="product-tag">
+                        NEW
+                    </span>
+
+                    <button class="wishlist-button">
+                        ♡
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80"
+                        alt="Essential White T-Shirt"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        T-SHIRT
+                    </p>
+
+                    <h3>
+                        Essential White Tee
+                    </h3>
+
+                    <div class="product-bottom">
+
+                        <span class="price">
+                            $29.00
+                        </span>
+
+                        <button
+                            class="add-button"
+                            data-name="Essential White Tee"
+                        >
+                            Add +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 2 -->
+            <div class="product-card" data-category="hoodie">
+
+                <div class="product-image">
+
+                    <button class="wishlist-button">
+                        ♡
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=700&q=80"
+                        alt="Black Hoodie"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        HOODIE
+                    </p>
+
+                    <h3>
+                        Essential Black Hoodie
+                    </h3>
+
+                    <div class="product-bottom">
+
+                        <span class="price">
+                            $59.00
+                        </span>
+
+                        <button
+                            class="add-button"
+                            data-name="Essential Black Hoodie"
+                        >
+                            Add +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 3 -->
+            <div class="product-card" data-category="denim">
+
+                <div class="product-image">
+
+                    <span class="product-tag sale">
+                        SALE
+                    </span>
+
+                    <button class="wishlist-button">
+                        ♡
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=700&q=80"
+                        alt="Blue Denim Jeans"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        DENIM
+                    </p>
+
+                    <h3>
+                        Classic Blue Denim
+                    </h3>
+
+                    <div class="product-bottom">
+
+                        <span class="price">
+                            $69.00
+                        </span>
+
+                        <button
+                            class="add-button"
+                            data-name="Classic Blue Denim"
+                        >
+                            Add +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 4 -->
+            <div class="product-card" data-category="jacket">
+
+                <div class="product-image">
+
+                    <span class="product-tag">
+                        NEW
+                    </span>
+
+                    <button class="wishlist-button">
+                        ♡
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=700&q=80"
+                        alt="Leather Jacket"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        JACKET
+                    </p>
+
+                    <h3>
+                        Urban Leather Jacket
+                    </h3>
+
+                    <div class="product-bottom">
+
+                        <span class="price">
+                            $129.00
+                        </span>
+
+                        <button
+                            class="add-button"
+                            data-name="Urban Leather Jacket"
+                        >
+                            Add +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 5 -->
+            <div class="product-card" data-category="tshirt">
+
+                <div class="product-image">
+
+                    <button class="wishlist-button">
+                        ♡
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1583743814966-8936f37f3841?auto=format&fit=crop&w=700&q=80"
+                        alt="Black T-Shirt"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        T-SHIRT
+                    </p>
+
+                    <h3>
+                        Premium Black Tee
+                    </h3>
+
+                    <div class="product-bottom">
+
+                        <span class="price">
+                            $32.00
+                        </span>
+
+                        <button
+                            class="add-button"
+                            data-name="Premium Black Tee"
+                        >
+                            Add +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 6 -->
+            <div class="product-card" data-category="hoodie">
+
+                <div class="product-image">
+
+                    <button class="wishlist-button">
+                        ♡
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1578681994506-b8f463449011?auto=format&fit=crop&w=700&q=80"
+                        alt="Grey Hoodie"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        HOODIE
+                    </p>
+
+                    <h3>
+                        Oversized Grey Hoodie
+                    </h3>
+
+                    <div class="product-bottom">
+
+                        <span class="price">
+                            $64.00
+                        </span>
+
+                        <button
+                            class="add-button"
+                            data-name="Oversized Grey Hoodie"
+                        >
+                            Add +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Promotional Banner -->
+    <section class="promo">
+
+        <div class="promo-content">
+
+            <p>
+                SYS ESSENTIALS
+            </p>
+
+            <h2>
+                Simple. Bold.<br>
+                Unmistakably You.
+            </h2>
+
+            <a href="#shop" class="primary-button">
+                Shop Essentials
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section class="about" id="about">
+
+        <div class="about-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1000&q=80"
+                alt="SYS Clothing Collection"
+            >
+
+        </div>
+
+
+        <div class="about-content">
+
+            <p class="small-heading">
+                ABOUT SYS
+            </p>
+
+            <h2>
+                Fashion without<br>
+                unnecessary rules.
+            </h2>
+
+            <p>
+                SYS Clothing is built around one simple idea:
+                clothing should feel like you.
+            </p>
+
+            <p>
+                We create clean, modern and comfortable pieces
+                that can become part of your everyday style.
+            </p>
+
+            <a href="#contact" class="text-link">
+                Discover our story →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+
+        <div>
+
+            <p class="small-heading">
+                STAY IN THE LOOP
+            </p>
+
+            <h2>
+                Get the latest from SYS.
+            </h2>
+
+            <p>
+                New drops, exclusive offers and style updates.
+            </p>
+
+        </div>
+
+
+        <form id="newsletter_form">
+
+            <input
+                type="email"
+                id="email_input"
+                placeholder="Your email address"
+                required
+            >
+
+            <button type="submit">
+                Subscribe
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="#" class="logo">
+                    SYS<span>.</span>
+                </a>
+
+                <p>
+                    Modern clothing for modern identities.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    SHOP
+                </h4>
+
+                <a href="#shop">New Arrivals</a>
+                <a href="#shop">Best Sellers</a>
+                <a href="#shop">T-Shirts</a>
+                <a href="#shop">Hoodies</a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    HELP
+                </h4>
+
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+                <a href="#">Size Guide</a>
+                <a href="#">FAQ</a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    FOLLOW US
+                </h4>
+
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">TikTok</a>
+                <a href="#">Pinterest</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 SYS Clothing. All rights reserved.
+            </p>
+
+            <p>
+                Designed for everyday style.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Cart Notification -->
+    <div class="cart-message" id="cart_message">
+        Item added to cart ✓
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
